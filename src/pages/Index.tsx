@@ -1,6 +1,8 @@
 
 import { Mail, Phone, MapPin, Target, Eye, Users, Briefcase, GraduationCap, Building, Lightbulb, TrendingUp, FileText, Award, Code, Rocket, HandHeart, Factory, Handshake } from "lucide-react";
 import { Button } from "../components/ui/button";
+import ResonanceLogo from "../components/ui/ResonanceLogo";
+import ResonanceLogoNav from "../components/ui/ResonanceLogoNav";
 
 const Index = () => {
   return (
@@ -35,48 +37,10 @@ const Index = () => {
           <div className="mb-8">
             <div className="relative">
               {/* Main logo shape */}
-              <div className="w-32 h-32 mx-auto mb-6 relative">
-                <svg viewBox="0 0 100 100" className="w-full h-full">
-                  <defs>
-                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#f97316"/>
-                      <stop offset="50%" stopColor="#ea580c"/>
-                      <stop offset="100%" stopColor="#dc2626"/>
-                    </linearGradient>
-                  </defs>
-                  {/* Top left triangle */}
-                  <path d="M20 15 L50 15 L50 35 L35 50 L20 35 Z" fill="url(#logoGradient)"/>
-                  {/* Top right triangle */}
-                  <path d="M50 15 L80 15 L80 35 L65 50 L50 35 Z" fill="url(#logoGradient)"/>
-                  {/* Bottom diamond */}
-                  <path d="M35 50 L50 35 L65 50 L50 65 Z" fill="url(#logoGradient)"/>
-                  {/* Bottom extensions */}
-                  <path d="M35 50 L20 65 L20 85 L35 70 Z" fill="url(#logoGradient)"/>
-                  <path d="M65 50 L80 65 L80 85 L65 70 Z" fill="url(#logoGradient)"/>
-                </svg>
-              </div>
+              {/* <div className="w-32 h-32 mx-auto mb-6 relative"> */}
+                <img src="./media/resonanceLogo.png" alt="Logo" />
+              {/* </div> */}
             </div>
-          </div>
-
-          {/* Company name */}
-          <h1 className="text-6xl md:text-7xl font-bold text-blue-900 mb-6 tracking-wider">
-            RESONANCE
-          </h1>
-
-          {/* Tagline */}
-          <p className="text-xl md:text-2xl text-blue-700 font-medium max-w-2xl mx-auto leading-relaxed">
-            Entrepreneurship & Employability Solutions Pvt. Ltd.
-          </p>
-
-          {/* Contact Button */}
-          <div className="mt-12">
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-            >
-              <Mail className="mr-2 h-5 w-5" />
-              Contact Us
-            </Button>
           </div>
         </div>
 
@@ -91,7 +55,7 @@ const Index = () => {
       </section>
 
       {/* Empowerment Section */}
-      <section className="h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 flex items-center justify-center px-6 md:px-12 lg:px-16 relative overflow-hidden">
+      <section className="h-auto bg-gradient-to-br from-blue-50 via-white to-blue-100 flex items-center justify-center px-6 md:px-12 lg:px-16 relative overflow-hidden pb-5">
         {/* Background decorative elements */}
         <div className="absolute inset-0">
           <div className="absolute top-10 left-10 w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full opacity-10"></div>
@@ -99,144 +63,63 @@ const Index = () => {
           <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-blue-300 to-blue-500 rounded-full opacity-10"></div>
         </div>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+        <div className="max-w-full mx-auto gap-12 items-center relative z-10 mt-5">
           {/* Text Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h2 className="text-4xl md:text-5xl font-bold text-blue-900 leading-tight">
-                Empowering India's Skilled
-                <br />
-                <span className="text-blue-700">Workforce & Entrepreneurs</span>
-              </h2>
+              {/* <img src="./media/resonancelogo.png" style={{width: "380px"}} className="mx-auto"/> */}
+              <ResonanceLogo />
+              <h1 className="text-4xl sm:text-5xl md:text-[4rem] lg:text-[6rem] font-bold text-[#2E5C9D] leading-tight text-center">
+                Empowering India’s Skilled <br />Workforce & Entrepreneurs
+              </h1>
               
-              <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-red-600 rounded"></div>
+              <img src="./media/workforce1.png" className="mx-auto"/>
               
-              <p className="text-lg md:text-xl text-blue-700 font-medium leading-relaxed">
+              <h2 className="text-base sm:text-2xl md:text-3xl lg:text-4xl text-[#2E5C9D] font-bold leading-relaxed text-center">
                 Resonance Solutions – Bridging Skills, Employability & Sustainability
-              </p>
-            </div>
-
-            <div className="space-y-4 text-gray-700">
-              <p className="text-base md:text-lg leading-relaxed">
-                We are dedicated to creating comprehensive solutions that bridge the gap between 
-                skills development and employment opportunities across India.
-              </p>
-              <p className="text-base md:text-lg leading-relaxed">
-                Our mission is to empower individuals with the right skills and connect them 
-                with sustainable career opportunities while fostering entrepreneurial growth.
-              </p>
-            </div>
-
-            <div className="pt-4">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-              >
-                Learn More
-              </Button>
-            </div>
-          </div>
-
-          {/* Illustration/Visual */}
-          <div className="relative">
-            <div className="bg-gradient-to-br from-blue-100 to-orange-100 rounded-3xl p-8 relative overflow-hidden">
-              {/* Team illustration placeholder */}
-              <div className="relative z-10">
-                <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center">
-                    <div className="w-8 h-8 bg-white rounded-full"></div>
-                  </div>
-                </div>
-                
-                {/* Team figures representation */}
-                <div className="grid grid-cols-3 gap-4 mb-6">
-                  {[...Array(6)].map((_, i) => (
-                    <div key={i} className="flex flex-col items-center space-y-2">
-                      <div className={`w-12 h-12 rounded-full ${
-                        i % 3 === 0 ? 'bg-blue-500' : 
-                        i % 3 === 1 ? 'bg-orange-500' : 'bg-green-500'
-                      }`}></div>
-                      <div className="w-8 h-2 bg-gray-300 rounded"></div>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Skills icons */}
-                <div className="flex justify-center space-x-4">
-                  <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-white rounded"></div>
-                  </div>
-                  <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-white rounded"></div>
-                  </div>
-                  <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-white rounded"></div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Background decorative elements */}
-              <div className="absolute top-4 right-4 w-20 h-20 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full opacity-20"></div>
-              <div className="absolute bottom-4 left-4 w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full opacity-20"></div>
+              </h2>
             </div>
           </div>
         </div>
       </section>
 
       {/* Welcome to Our Company Section */}
-      <section className="h-screen bg-gradient-to-br from-orange-50 via-white to-orange-100 flex items-center justify-center px-6 md:px-12 lg:px-16 relative overflow-hidden">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+      <ResonanceLogoNav />
+      <section className="h-auto flex items-center justify-center relative overflow-hidden pb-3">
+        
+        <div className="max-w-full mx-auto grid sm:grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
           {/* Image/Visual */}
-          <div className="relative">
-            <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl p-8 relative overflow-hidden aspect-video">
-              <div className="relative z-10 flex items-center justify-center h-full">
-                <Users className="w-32 h-32 text-blue-600 opacity-80" />
-              </div>
-              <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full opacity-20"></div>
-              <div className="absolute bottom-4 left-4 w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full opacity-20"></div>
-            </div>
-          </div>
+          <img src="./media/audience.png" className="lg:w-full" />
 
           {/* Text Content */}
-          <div className="space-y-8">
-            <div className="space-y-6">
-              <h2 className="text-4xl md:text-5xl font-bold text-blue-900 leading-tight">
+          <div className="space-y-8 w">
+            <div className="space-y-6 ps-5 md:ps-0">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#2E5C9D] leading-tight">
                 Welcome to
                 <br />
-                <span className="text-orange-600">Our Company</span>
+                <span className="text-black font-medium">Our Company</span>
               </h2>
               
-              <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-red-600 rounded"></div>
-              
-              <p className="text-lg md:text-xl text-blue-700 font-medium leading-relaxed">
+              <p className="text-xl md:text-2xl text-black font-bold leading-relaxed w-2/3">
                 A dynamic social enterprise advancing entrepreneurship and employability through skill development, strategic partnerships and innovation.
               </p>
             </div>
 
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl md:text-3xl font-bold text-blue-800 mb-4">Our Edge:</h3>
-                <div className="space-y-3 text-gray-700">
-                  <p className="text-base md:text-lg leading-relaxed">
+                <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#2E5C9D] mb-4">Our Edge:</h3>
+                <div className="space-y-3 text-xl md:text-2xl text-black font-bold">
+                  <p>
                     Govt-aligned programs (NATS, NAPS, WISTA, AEDP)
                   </p>
-                  <p className="text-base md:text-lg leading-relaxed">
+                  <p>
                     Strong Academia - Industry - Government linkages
                   </p>
-                  <p className="text-base md:text-lg leading-relaxed">
+                  <p>
                     Onboarded 25,000 Candidates in 100+ Establishments (industries and organizations)
                   </p>
                 </div>
               </div>
-            </div>
-
-            <div className="pt-4">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-orange-600 to-red-700 hover:from-orange-700 hover:to-red-800 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-              >
-                Discover More
-              </Button>
             </div>
           </div>
         </div>
