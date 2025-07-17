@@ -92,9 +92,9 @@ const Index = () => {
           <img src="./media/audience.png" className="lg:w-full" />
 
           {/* Text Content */}
-          <div className="space-y-8 w">
-            <div className="space-y-6 ps-5 md:ps-0">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#2E5C9D] leading-tight">
+          <div className="space-y-8 ps-5 md:ps-0">
+            <div className="space-y-6">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#2E5C9D]">
                 Welcome to
                 <br />
                 <span className="text-black font-medium">Our Company</span>
@@ -125,38 +125,34 @@ const Index = () => {
         </div>
       </section>
 
+      <ResonanceLogoNav />
       {/* Vision & Mission Section */}
-      <section className="h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 flex items-center justify-center px-6 md:px-12 lg:px-16 relative overflow-hidden">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+      <section className="h-auto bg-gradient-to-br from-gray-50 via-white to-gray-100 flex items-center justify-centerrelative overflow-hidden mt-5">
+        <div className="max-w-full mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
           {/* Text Content */}
-          <div className="space-y-12">
+          <div className="space-y-12 px-10">
             {/* Vision */}
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <Eye className="w-8 h-8 text-blue-600" />
-                <h2 className="text-3xl md:text-4xl font-bold text-blue-900">Vision</h2>
+                <h2 className="text-4xl md:text-7xl font-bold text-[#2E5C9D]">Vision</h2>
               </div>
               
-              <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                To ignite a vibrant entrepreneurial culture and equip the youth with employable skills to create a robust industrial workforce for the nation and beyond.
+              <p className="text-xl md:text-2xl text-black font-bold leading-tight">
+                To ignite a vibrant entrepreneurial culture and equip the youth with employable <br />
+                skills to create a robust industrial workforce for the nation and beyond.
               </p>
             </div>
 
             {/* Mission */}
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <Target className="w-8 h-8 text-orange-600" />
-                <h2 className="text-3xl md:text-4xl font-bold text-blue-900">Mission</h2>
+                <h2 className="text-4xl md:text-7xl font-bold text-[#2E5C9D]">Mission</h2>
               </div>
               
-              <div className="space-y-4 text-gray-700">
-                <p className="text-base md:text-lg leading-relaxed">
-                  To establish a strong framework that empowers entrepreneurs to overcome challenges and develop scalable, sustainable businesses.
-                </p>
-                <p className="text-base md:text-lg leading-relaxed">
-                  To champion innovation as a key driver of India's economic advancement.
-                </p>
-                <p className="text-base md:text-lg leading-relaxed">
+              <div className="space-y-4 text-xl md:text-2xl text-black font-bold">
+                <p className="leading-tight">
+                  To establish a strong framework that empowers entrepreneurs to overcome challenges and develop scalable, sustainable businesses.<br />
+                  To champion innovation as a key driver of India's economic advancement.<br/>
                   To foster job creation, financial inclusivity and GDP growth through the success of entrepreneurial ventures.
                 </p>
               </div>
@@ -164,57 +160,23 @@ const Index = () => {
           </div>
 
           {/* Visual */}
-          <div className="relative">
-            <div className="bg-gradient-to-br from-blue-100 to-orange-100 rounded-3xl p-8 relative overflow-hidden">
-              <div className="relative z-10 space-y-8">
-                {/* Vision illustration */}
-                <div className="bg-white rounded-2xl p-6 flex items-center justify-center aspect-video">
-                  <div className="grid grid-cols-3 gap-4">
-                    <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
-                      <Lightbulb className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center">
-                      <TrendingUp className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
-                      <Users className="w-6 h-6 text-white" />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Mission illustration */}
-                <div className="bg-white rounded-2xl p-6 flex items-center justify-center aspect-video">
-                  <div className="flex items-center justify-center space-x-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
-                      <Target className="w-8 h-8 text-white" />
-                    </div>
-                    <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center">
-                      <Briefcase className="w-8 h-8 text-white" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full opacity-20"></div>
-              <div className="absolute bottom-4 left-4 w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full opacity-20"></div>
-            </div>
+          <div className="space-y-12 ps-2">
+            <img src="./media/vision.png" className="space-y-6" />
+            <img src="./media/bonding.png" className="space-y-6" />
           </div>
         </div>
       </section>
 
       {/* Our Focus Areas Section */}
-      <section className="h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 flex items-center justify-center px-6 md:px-12 lg:px-16 relative overflow-hidden">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+      <ResonanceLogoNav />
+      <section className="h-auto flex items-center justify-center px-6 md:px-12 lg:px-16 relative overflow-hidden pb-5">
+        <div className="max-w-full mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
           {/* Text Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h2 className="text-4xl md:text-5xl font-bold text-blue-900 leading-tight">
-                Our Focus
-                <br />
-                <span className="text-blue-700">Area's</span>
+              <h2 className="text-4xl md:text-7xl font-bold text-[#2E5C9D] leading-tight">
+                Our Focus <span className="text-[#2E5C9D] font-normal">Area's</span>
               </h2>
-              
-              <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-red-600 rounded"></div>
             </div>
 
             <div className="space-y-6">
@@ -226,80 +188,29 @@ const Index = () => {
                 { icon: TrendingUp, text: "Startup Incubation" },
                 { icon: FileText, text: "Policy Implementation" }
               ].map((item, index) => (
-                <div key={index} className="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div key={index} className="flex items-center space-x-4">
                   <item.icon className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                  <span className="text-base md:text-lg text-gray-700 font-medium">{item.text}</span>
+                  <span className="text-black text-xl md:text-4xl font-bold">{item.text}</span>
                 </div>
               ))}
-            </div>
-
-            <div className="pt-4">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-              >
-                Explore Areas
-              </Button>
             </div>
           </div>
 
           {/* Visual */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-orange-100 to-blue-100 rounded-3xl p-8 relative overflow-hidden">
-              <div className="relative z-10 space-y-6">
-                {/* Top row */}
-                <div className="flex justify-between">
-                  <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
-                    <GraduationCap className="w-10 h-10 text-white" />
-                  </div>
-                  <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center">
-                    <Users className="w-10 h-10 text-white" />
-                  </div>
-                </div>
-
-                {/* Middle row */}
-                <div className="flex justify-center">
-                  <div className="w-24 h-24 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center">
-                    <Building className="w-12 h-12 text-white" />
-                  </div>
-                </div>
-
-                {/* Bottom row */}
-                <div className="flex justify-between">
-                  <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center">
-                    <Lightbulb className="w-10 h-10 text-white" />
-                  </div>
-                  <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center">
-                    <TrendingUp className="w-10 h-10 text-white" />
-                  </div>
-                </div>
-
-                {/* Center connecting element */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center">
-                    <Target className="w-8 h-8 text-blue-600" />
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full opacity-20"></div>
-              <div className="absolute bottom-4 left-4 w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full opacity-20"></div>
-            </div>
+            <img src="./media/focusArea.png" />
           </div>
         </div>
       </section>
 
       {/* Core Programs Section */}
-      <section className="h-screen bg-gradient-to-br from-orange-50 via-white to-orange-100 flex items-center justify-center px-6 md:px-12 lg:px-16 relative overflow-hidden">
-        <div className="max-w-6xl mx-auto text-center relative z-10">
+      <div className='flex justify-center items-center mx-auto'>
+            <span className="flex justify-end"><ResonanceLogoNav /></span>
+            <h1 className='text-4xl md:text-7xl font-bold text-[#2E5C9D]'>Core <span className="font-normal">Programs</span></h1>
+      </div>
+      <section className="h-auto flex items-center justify-center px-6 md:px-12 lg:px-16 relative overflow-hidden pb-5">
+        <div className="max-w-full mx-auto text-center relative z-10">
           <div className="space-y-8">
-            <div className="space-y-6">
-              <h2 className="text-4xl md:text-5xl font-bold text-blue-900 leading-tight">
-                Core <span className="text-orange-600">Programs</span>
-              </h2>
-              
-              <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-red-600 rounded mx-auto"></div>
-            </div>
 
             <div className="grid md:grid-cols-2 gap-8 mt-12">
               {/* Top Row */}
@@ -336,21 +247,16 @@ const Index = () => {
                 <p className="text-gray-600">(WISTA)</p>
               </div>
             </div>
-
-            <div className="pt-8">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-orange-600 to-red-700 hover:from-orange-700 hover:to-red-800 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-              >
-                Explore Programs
-              </Button>
-            </div>
           </div>
         </div>
       </section>
 
       {/* Key Services Section */}
-      <section className="h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 flex items-center justify-center px-6 md:px-12 lg:px-16 relative overflow-hidden">
+      <div className='flex justify-center items-center mx-auto'>
+            <span className="flex justify-end"><ResonanceLogoNav /></span>
+            <h1 className='text-4xl md:text-7xl font-bold text-[#2E5C9D]'>Key <span className="font-normal">Services</span></h1>
+      </div>
+      <section className="h-auto bg-gradient-to-br from-gray-50 via-white to-gray-100 flex items-center justify-center px-6 md:px-12 lg:px-16 relative overflow-hidden">
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="space-y-8">
             <div className="space-y-6">
