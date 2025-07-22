@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Target, Eye, Users, Briefcase, GraduationCap, Buil
 import { Button } from "../components/ui/button";
 import ResonanceLogo from "../components/ui/ResonanceLogo";
 import ResonanceLogoNav from "../components/ui/ResonanceLogoNav";
-import Navbar from "@/components/NavBar";
+import Navbar from "@/components/Navbar";
 
 const Index = () => {
   return (
