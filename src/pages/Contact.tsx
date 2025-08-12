@@ -25,18 +25,35 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
     if (!validate()) {
       setStatus("error");
       return;
     }
+
     setSubmitting(true);
     setStatus(null);
+
     try {
-      // placeholder for real submission
-      await new Promise((r) => setTimeout(r, 1000));
-      setStatus("success");
-      setForm({ name: "", email: "", phone: "", message: "" });
-    } catch {
+      // const res = await fetch("http://localhost:8000/api/sendResonanceContactEmail", {
+      const res = await fetch("https://api.calmchase.com/api/sendResonanceContactEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        setStatus("success");
+        setForm({ name: "", email: "", phone: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch (err) {
+      console.error("Error submitting form:", err);
       setStatus("error");
     } finally {
       setSubmitting(false);
