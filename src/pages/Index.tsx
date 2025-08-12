@@ -38,10 +38,9 @@ const Index = () => {
           {/* Logo */}
           <div className="mb-8">
             <div className="relative">
-              {/* Main logo shape */}
-              {/* <div className="w-32 h-32 mx-auto mb-6 relative"> */}
-                <img src="./media/resonanceLogo.png" alt="Logo" />
-              {/* </div> */}
+              <div className="w-72 h-72 mx-auto mb-6 relative">
+                <img src="/media/resonanceLogoNav.png" alt="Logo" />
+              </div>
             </div>
           </div>
         </div>
@@ -342,66 +341,76 @@ const Index = () => {
             <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-orange-500 to-red-600 rounded mx-auto" />
           </div>
 
-          {/* Partner Grids */}
-          <div className="space-y-10 mt-10">
-
-            {/* Partner Category Row 1 */}
+          {/* Partner Logos */}
+          <div className="space-y-10 my-10">
+            {/* Generate all logos in rows */}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 sm:gap-6">
-              {[...Array(7)].map((_, i) => (
-                <div key={i} className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg flex items-center justify-center h-20 transition-shadow">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                    <Factory className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                  </div>
+              {[...Array(22)].map((_, i) => (
+                <div
+                  key={i}
+                  className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg flex items-center justify-center h-20 transition-shadow"
+                >
+                  <img
+                    src={`/images/clients/${i + 1}.svg`}
+                    alt={`Client ${i + 1}`}
+                    className="max-h-12 max-w-full object-contain"
+                  />
                 </div>
               ))}
-            </div>
-
-            {/* Partner Category Row 2 */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 sm:gap-6">
-              {[...Array(7)].map((_, i) => (
-                <div key={i} className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg flex items-center justify-center h-20 transition-shadow">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
-                    <Building className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Partner Category Row 3 */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6 justify-center">
-              {[...Array(4)].map((_, i) => (
-                <div key={i} className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg flex items-center justify-center h-20 transition-shadow">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center">
-                    <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* CSR Partners */}
-            <div className="mt-10">
-              <h3 className="text-xl sm:text-2xl font-bold text-blue-800 mb-6">CSR and Knowledge Partners</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
-                {[...Array(6)].map((_, i) => (
-                  <div key={i} className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg flex items-center justify-center h-20 transition-shadow">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center">
-                      <Handshake className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
 
           {/* CTA Button */}
-          <div className="pt-10">
+          {/* <div className="pt-10">
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-orange-600 to-red-700 hover:from-orange-700 hover:to-red-800 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
             >
               View All Partners
             </Button>
+          </div> */}
+        </div>
+      </section>
+
+      {/* Government Partners Section */}
+      <section className="h-auto bg-gradient-to-br from-blue-50 via-white to-blue-100 flex justify-center px-4 sm:px-6 md:px-12 lg:px-16 py-10">
+        <div className="max-w-7xl w-full text-center relative z-10">
+          
+          {/* Heading */}
+          <div className="space-y-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 leading-tight">
+              Government <span className="text-blue-700">Partners</span>
+            </h2>
+            <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-orange-500 to-red-600 rounded mx-auto" />
           </div>
+
+          {/* Partner Logos */}
+          <div className="my-10">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+              {[...Array(12)].map((_, i) => (
+                <div
+                  key={i}
+                  className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg flex items-center justify-center h-20 transition-shadow"
+                >
+                  <img
+                    src={`/images/govlogo/${i + 1}.svg`}
+                    alt={`Government Partner ${i + 1}`}
+                    className="max-h-12 max-w-full object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* CTA Button */}
+          {/* <div className="pt-10">
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-orange-600 to-red-700 hover:from-orange-700 hover:to-red-800 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+            >
+              View All Government Partners
+            </Button>
+          </div> */}
         </div>
       </section>
 
@@ -461,9 +470,9 @@ const Index = () => {
           <div className="relative">
             <div className="bg-gradient-to-br from-blue-100 to-orange-100 rounded-2xl p-4 sm:p-6 relative overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" 
+                src="\images\founder\found23.png" 
                 alt="Vivek Somnath Sinare - Founder & MD"
-                className="w-full h-64 sm:h-72 md:h-80 object-cover rounded-xl"
+                className="w-full h-72 sm:h-80 md:h-92 object-cover rounded-xl"
               />
               {/* Decorative Elements */}
               <div className="absolute top-4 right-4 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full opacity-20" />
@@ -526,42 +535,42 @@ const Index = () => {
             {[
               {
                 name: 'DR. MILIND KAMBLE',
-                img: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=150&h=150&fit=crop&crop=face',
+                img: '/images/advisers/7.svg',
                 desc: 'Leading entrepreneur and visionary strategist pioneering transformative entrepreneurial landscape through inclusive growth and MSCI leadership.'
               },
               {
                 name: 'ATUL KULKARNI',
-                img: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=150&h=150&fit=crop&crop=face',
+                img: '/images/advisers/3.svg',
                 desc: 'Techno-managerial expert with 35+ years in rural credit, banking and policy, specializing in supply chain and global markets.'
               },
               {
                 name: 'VAIBHAV DANGE',
-                img: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=150&h=150&fit=crop&crop=face',
+                img: '/images/advisers/1.svg',
                 desc: 'Change agent with expertise in government CSR, sustainable development, and strategic planning.'
               },
               {
                 name: 'RITA SEN GUPTA',
-                img: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=150&h=150&fit=crop&crop=face',
+                img: '/images/advisers/2.svg',
                 desc: 'Former HR-CEO renowned expert in skill development and experience training 1500 professionals in entrepreneurship.'
               },
               {
                 name: 'SUMITRA GOENKA',
-                img: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=150&h=150&fit=crop&crop=face',
+                img: '/images/advisers/6.svg',
                 desc: 'Entrepreneur, Director & CEO managing Storage & Logistics, UiImg Pvt Ltd, and more. Growth architect & NSE listed company.'
               },
               {
                 name: 'RAJENDRA BAGADE',
-                img: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=150&h=150&fit=crop&crop=face',
+                img: '/images/advisers/4.svg',
                 desc: 'Senior Chartered Accountant with expertise in MNCs, PSUs, FPOs, and FPCs across diverse industries.'
               },
               {
                 name: 'SAARA A TOMAR',
-                img: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=150&h=150&fit=crop&crop=face',
+                img: '/images/advisers/8.svg',
                 desc: 'Startup mentor and edtech founder with 20+ years in sales, marketing, and strategic planning.'
               },
               {
                 name: 'NARENDRA GODSE',
-                img: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=150&h=150&fit=crop&crop=face',
+                img: '/images/advisers/5.svg',
                 desc: 'Startup mentor and public sector advisor with 20+ years in sales, marketing, and strategy.'
               }
             ].map((advisor, i) => (
@@ -598,10 +607,10 @@ const Index = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-300">
-                <li><a href="#" className="hover:text-orange-400 transition-colors">About Us</a></li>
-                <li><a href="#" className="hover:text-orange-400 transition-colors">Services</a></li>
-                <li><a href="#" className="hover:text-orange-400 transition-colors">Solutions</a></li>
-                <li><a href="#" className="hover:text-orange-400 transition-colors">Career</a></li>
+                <li><a href="/about" className="hover:text-orange-400 transition-colors">About Us</a></li>
+                <li><a href="/gallery" className="hover:text-orange-400 transition-colors">Gallery</a></li>
+                <li><a href="/contact" className="hover:text-orange-400 transition-colors">Contact</a></li>
+                {/* <li><a href="#" className="hover:text-orange-400 transition-colors">Career</a></li> */}
               </ul>
             </div>
 
@@ -611,22 +620,22 @@ const Index = () => {
               <div className="space-y-3 text-gray-300">
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-3 text-orange-400" />
-                  <span>info@resonance.com</span>
+                  <span>apply.theresonance@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-3 text-orange-400" />
-                  <span>+91 12345 67890</span>
+                  <span>+91 6366824350</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-3 text-orange-400" />
-                  <span>Mumbai, India</span>
+                  <span>Pune, India</span>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Resonance Entrepreneurship & Employability Solutions Pvt. Ltd. All rights reserved.</p>
+            <p>&copy; 2025 Resonance Entrepreneurship & Employability Solutions Pvt. Ltd. All rights reserved.</p>
           </div>
         </div>
       </footer>
