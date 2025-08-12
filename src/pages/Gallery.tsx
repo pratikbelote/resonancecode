@@ -11,12 +11,14 @@ type GalleryItem = {
 };
 
 const sampleGallery: GalleryItem[] = [
-  { id: "1", title: "Skill Workshop", src: "/media/audience.png", alt: "Workshop" },
-  { id: "2", title: "Entrepreneur Meetup", src: "/media/bonding.png", alt: "Meetup" },
-  { id: "3", title: "Training Session", src: "/media/vision.png", alt: "Training" },
-  { id: "4", title: "Campus Program", src: "/media/workforce.png", alt: "Campus" },
-  { id: "5", title: "Incubation Support", src: "/media/workforce1.png", alt: "Incubation" },
-  { id: "6", title: "Startup Mentoring", src: "/media/audience.png", alt: "Mentoring" },
+  { id: "1", title: "Skill Workshop", src: "/gallery/1.svg", alt: "Workshop" },
+  { id: "2", title: "Entrepreneur Meetup", src: "/gallery/2.svg", alt: "Meetup" },
+  { id: "3", title: "Training Session", src: "/gallery/3.svg", alt: "Training" },
+  { id: "4", title: "Campus Program", src: "/gallery/4.svg", alt: "Campus" },
+  { id: "5", title: "Incubation Support", src: "/gallery/5.svg", alt: "Incubation" },
+  { id: "6", title: "Startup Mentoring", src: "/gallery/6.svg", alt: "Mentoring" },
+  { id: "7", title: "Startup Mentoring", src: "/gallery/7.svg", alt: "Mentoring" },
+  { id: "8", title: "Startup Mentoring", src: "/gallery/8.svg", alt: "Mentoring" },
   // add more as needed
 ];
 
