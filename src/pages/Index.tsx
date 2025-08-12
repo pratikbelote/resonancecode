@@ -34,16 +34,28 @@ const Index = () => {
           </svg>
         </div>
 
-        <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 md:px-12 lg:px-16 text-center">
-          {/* Logo */}
-          <div className="mb-8">
-            <div className="relative">
-              <div className="w-72 h-72 mx-auto mb-6 relative">
-                <img src="/media/resonanceLogoNav.png" alt="Logo" />
-              </div>
-            </div>
-          </div>
-        </div>
+<div className="relative z-10 flex flex-col items-center justify-center h-full px-6 md:px-12 lg:px-16 text-center">
+  {/* Logo */}
+  <div className="mb-1">
+    <div className="relative">
+      <div className="w-56 sm:w-60 md:w-72 lg:w-[30rem] h-auto relative">
+        <img
+          src="/images/page1/logo.jpg"
+          alt="Logo"
+          className="w-full h-auto object-contain"
+        />
+      </div>
+    </div>
+  </div>
+
+  {/* Company Name */}
+  <div>
+    <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#2E5C9D] leading-tight">
+      Entreprenuership & Employability Solutions Pvt Ltd.
+    </h1>
+  </div>
+</div>
+
 
         {/* Floating elements */}
         <div className="absolute bottom-10 left-10 opacity-30">
