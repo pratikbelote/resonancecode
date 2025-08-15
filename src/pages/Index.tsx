@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MapPin, Target, Eye, Users, Briefcase, GraduationCap, Building, Lightbulb, TrendingUp, FileText, Award, Code, Rocket, HandHeart, Factory, Handshake } from "lucide-react";
+import { Mail, Phone, MapPin, Target, Eye, Users, Briefcase, GraduationCap, Building, Lightbulb, TrendingUp, FileText, Award, Code, Rocket, HandHeart, Factory, Handshake, Mouse } from "lucide-react";
 import { Button } from "../components/ui/button";
 import ResonanceLogo from "../components/ui/ResonanceLogo";
 import ResonanceLogoNav from "../components/ui/ResonanceLogoNav";
@@ -34,27 +34,27 @@ const Index = () => {
           </svg>
         </div>
 
-<div className="relative z-10 flex flex-col items-center justify-center h-full px-6 md:px-12 lg:px-16 text-center">
-  {/* Logo */}
-  <div className="mb-1">
-    <div className="relative">
-      <div className="w-56 sm:w-60 md:w-72 lg:w-[30rem] h-auto relative">
-        <img
-          src="/images/page1/logo.jpg"
-          alt="Logo"
-          className="w-full h-auto object-contain"
-        />
-      </div>
-    </div>
-  </div>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 md:px-12 lg:px-16 text-center">
+          {/* Logo */}
+          <div className="mb-1">
+            <div className="relative">
+              <div className="w-56 sm:w-60 md:w-72 lg:w-[30rem] h-auto relative">
+                <img
+                  src="/images/page1/logo.jpg"
+                  alt="Logo"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+          </div>
 
-  {/* Company Name */}
-  <div>
-    <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#2E5C9D] leading-tight">
-      Entreprenuership & Employability Solutions Pvt Ltd.
-    </h1>
-  </div>
-</div>
+          {/* Company Name */}
+          <div>
+            <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#2E5C9D] leading-tight">
+              Entreprenuership & Employability Solutions Pvt Ltd.
+            </h1>
+          </div>
+        </div>
 
 
         {/* Floating elements */}
@@ -65,6 +65,15 @@ const Index = () => {
             <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
           </div>
         </div>
+
+        {/* Scroll down indicator */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-6 flex justify-center">
+          <div className="flex flex-col items-center space-y-2 animate-bounce">
+            <Mouse className="w-6 h-6 text-gray-700" />
+            <p className="text-sm text-gray-700 font-medium">Scroll down</p>
+          </div>
+        </div>
+
       </section>
 
       {/* Empowerment Section */}
@@ -357,7 +366,7 @@ const Index = () => {
           <div className="space-y-10 my-10">
             {/* Generate all logos in rows */}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 sm:gap-6">
-              {[...Array(22)].map((_, i) => (
+              {[...Array(21)].map((_, i) => (
                 <div
                   key={i}
                   className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg flex items-center justify-center h-20 transition-shadow"
@@ -460,7 +469,7 @@ const Index = () => {
           <div className="relative">
             <div className="bg-gradient-to-br from-purple-100 to-blue-100 rounded-2xl p-4 sm:p-6 relative overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop" 
+                src="https://images.unsplash.com/photo-1734519654307-ceb306e4073a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                 alt="Team collaboration"
                 className="w-full h-64 sm:h-72 md:h-80 object-cover rounded-xl"
               />
