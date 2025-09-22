@@ -609,6 +609,78 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Meet Our Team Section */}
+      <section className="h-auto bg-gradient-to-br from-blue-50 via-white to-blue-100 flex justify-center px-4 sm:px-6 md:px-12 lg:px-16 py-12 lg:py-20">
+        <div className="max-w-6xl w-full text-center relative z-10 space-y-12">
+          {/* Section Heading */}
+          <div className="space-y-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 leading-tight">
+              Meet Our <span className="text-blue-700">Team</span>
+            </h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-red-600 rounded mx-auto"></div>
+          </div>
+
+          {/* Team Cards Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {[
+              {
+                name: 'Arundhati Katdare',
+                position: 'Head - HR & Operations',
+                img: '/team/Arundhati.JPG'
+              },
+              {
+                name: 'Vishakha Patil',
+                position: 'Asst. Manager - Bus. Development',
+                img: '/team/Vishakha.JPG'
+              },
+              {
+                name: 'Kirti Katti',
+                position: 'Asst. Manager - Talent Acquisition',
+                img: '/team/Kirti.JPG'
+              },
+              {
+                name: 'Akshat Khulat',
+                position: 'Asst. Manager - L&D',
+                img: '/team/Akshay.JPG'
+              },
+              {
+                name: 'Imran Bagwan',
+                position: 'Manager - Talent Acquisition',
+                img: '/team/Imran.JPG'
+              },
+              {
+                name: 'Shyam J Dhoble',
+                position: 'Divisional Manager - Vidharbha',
+                img: '/team/Shyam Dhobale.jpeg'
+              },
+              {
+                name: 'Vandana Arvind',
+                position: 'Consultant',
+                img: null // Missing photo - will show placeholder
+              }
+            ].map((member, i) => (
+              <div key={i} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden bg-gray-200 flex items-center justify-center">
+                  {member.img ? (
+                    <img 
+                      src={member.img}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-white flex items-center justify-center">
+                      <Users className="w-8 h-8 text-gray-400" />
+                    </div>
+                  )}
+                </div>
+                <h3 className="text-lg font-bold text-blue-900 mb-2">{member.name}</h3>
+                <p className="text-sm text-gray-600">{member.position}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 px-6 md:px-12 lg:px-16">
         <div className="max-w-6xl mx-auto">
